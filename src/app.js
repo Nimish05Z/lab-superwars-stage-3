@@ -27,8 +27,7 @@ const initPlayers = (players) => {
 
     // Instead of forloop use Map method
     // Code here
-    const initPlayers = (players) => {
-    let detailedPlayers = players.map((player, index) => ({
+    detailedPlayers = players.map((player, index) => ({
         name: player,
         strength: getRandomStrength(),
         img: `images/super-${index + 1}.png`,
